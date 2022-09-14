@@ -1,0 +1,206 @@
+/* Reset and General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Design */
+
+.hero {
+    height: 100%;
+    background-color: #1B262C;
+    background-image: url(assets/main-profile-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 45%;
+}
+
+/* Nav */
+
+.nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+h1 {
+    margin: 0.5rem;
+}
+
+h1 a {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2.4rem;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    margin: 0 6px;
+}
+
+li a {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+/* Latest Release */
+
+.latest-release-phone {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 6px;
+}
+
+.latest-release-desktop {
+    display: none;
+}
+
+.latest-release-title {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.out-now {
+    color: #D9D9D9;
+}
+
+.buttons-container {
+    width: 100%;
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+button {
+    padding: 6px 0;
+    font-family: 'Josefin Sans', sans-serif
+}
+
+.button-1 {
+    background-color: #FFB249;
+    border: #FFB249 2px solid;
+    color: #1B262C;
+}
+
+.button-2 {
+    background: none;
+    border: #fff 2px solid;
+    color: #fff;
+}
+
+/* Desktop */
+
+@media (min-width: 800px) {
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .nav {
+        height: auto;
+        width: 100%;
+        flex-direction: row;
+        align-items: baseline;
+        padding: 1rem 2rem;
+    }
+
+    h1 a {
+        font-size: 3rem;
+    }
+
+    li {
+        margin: 1rem;
+    }
+
+    li::after {
+        content: '';
+        height: 2px;
+        margin: auto;
+        display: block;
+        background-color: #fff;
+        width: 0%;
+        transition: 0.1s;
+    }
+
+    li:hover::after {
+        width: 100%;
+    }
+
+    li a {
+        font-size: 1.6rem;
+    }
+
+    .latest-release-phone {
+        display: none;
+    }
+
+    .latest-release-desktop {
+        width: 30%;
+        margin: 2.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    .latest-release-title {
+        font-size: 2.4rem;
+    }
+
+    .out-now {
+        font-size: 1.8rem;
+    }
+
+    .buttons-container {
+        margin-top: 1.6rem;
+        flex-direction: row;
+    }
+
+    button {
+        font-size: 1.8rem;
+        width: 40%;
+        padding: 1rem 0.5rem;
+    }
+
+    .button-1 {
+        border: #FFB249 3px solid;
+    }
+
+    .button-2 {
+        border: #fff 3px solid;
+    }
+
+    button:hover {
+        background-color: #fff;
+        color: #1B262C;
+        border: #fff 3px solid;
+        cursor: pointer;
+    }
+
+}
