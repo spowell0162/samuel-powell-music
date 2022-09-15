@@ -91,14 +91,18 @@ li a {
 }
 
 .buttons-container {
-    width: 100%;
     margin-top: 6px;
     display: flex;
     flex-direction: column;
     gap: 6px;
 }
 
+.buttons-container a {
+    text-align: center;
+}
+
 button {
+    width: 8rem;
     padding: 6px 0;
     font-family: 'Josefin Sans', sans-serif
 }
@@ -195,7 +199,7 @@ button {
 
     button {
         font-size: 1.8rem;
-        width: 40%;
+        width: 10rem;
         padding: 1rem 0.5rem;
     }
 
