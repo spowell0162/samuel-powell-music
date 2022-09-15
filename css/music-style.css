@@ -1,0 +1,252 @@
+/* Reset and General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #1B262C;
+    --white: #fff;
+    --orange: #FFB249;
+    --silver: #D9D9D9;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12px;
+    background-color: var(--black);
+}
+
+a {
+    text-decoration: none;
+}
+
+.music-page-container {
+    background-color: var(--black);
+    padding: 1rem 1rem 3rem 1rem;
+}
+
+/* Logo and Nav */
+
+h1 {
+    text-align: center;
+}
+
+h1 a {
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 2.4rem;
+}
+
+.desktop-nav-list {
+    display: none;
+}
+
+.fixed-nav {
+    background-color: var(--orange);
+    text-align: center;
+    position: fixed;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0.5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    margin: 0 6px;
+}
+
+li a {
+    font-size: 1.4rem;
+    color: var(--black);
+}
+
+/* Main */
+
+.release-block {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1.6rem;
+}
+
+.artwork-container {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+.about-release-block {
+    margin-top: 0.5rem;
+    border-top: 2px solid var(--orange);
+}
+
+h2 {
+    margin-top: 1rem;
+    color: var(--white);
+}
+
+h3, p {
+    margin-top: 0.5rem;
+    color: var(--white);
+}
+
+h3 {
+    font-weight: 400;
+}
+
+p {
+    font-weight: 300;
+}
+
+.buttons-container {
+    margin-top: 0.6rem;
+}
+
+button {
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 0.5rem;
+    width: 6rem;
+}
+
+.button-1 {
+    background-color: var(--orange);
+    border: var(--orange) 2px solid;
+}
+
+.button-2 {
+    background-color: rgba(255, 255, 255, 0);
+    border: var(--white) 2px solid;
+    color: var(--white);
+}
+
+/* Tablet */
+
+@media (min-width: 600px) {
+
+    .release-block {
+        width: 60%;
+    }
+}
+
+
+/* Desktop */
+
+@media (min-width: 800px) {
+
+    /* General */
+
+    .music-page-container {
+        padding-bottom: 1rem;
+    }
+
+    /* Logo and Nav */
+
+    .fixed-nav {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 0rem 1rem;
+    }
+
+    .desktop-nav-list {
+        display: block;
+    }
+
+    h1 a {
+        font-size: 3rem;
+    }
+
+    li {
+        margin: 1rem;
+    }
+
+    li::after {
+        content: '';
+        height: 2px;
+        margin: auto;
+        display: block;
+        background-color: var(--orange);
+        width: 0%;
+        transition: 0.1s;
+    }
+
+    li:hover::after {
+        width: 100%;
+    }
+
+    li a {
+        color: var(--white);
+        font-size: 1.6rem;
+    }
+
+    /* Main */
+
+    .release-block {
+        width: 100%;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .release-block-reverse {
+        flex-direction: row-reverse;
+    }
+
+    .about-release-block {
+        height: 100%;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    .buttons-container {
+        margin-top: 1rem;
+    }
+
+    button {
+        padding: 0.8rem;
+        width: 8rem;
+        font-size: 1.2rem;
+    }
+
+    button:hover {
+        border: var(--white) 2px solid;
+        background-color: var(--white);
+        color: var(--black);
+    }
+
+}
