@@ -96,6 +96,11 @@ img {
     border-top: 2px solid var(--orange);
 }
 
+.about-release-block p a {
+    text-decoration: underline;
+    color: var(--white);
+}
+
 h2 {
     margin-top: 1rem;
     color: var(--white);
@@ -208,16 +213,19 @@ button {
         width: 100%;
         flex-direction: row;
         align-items: flex-start;
-        gap: 1rem;
-
+        gap: 2rem;
     }
 
     .release-block-reverse {
         flex-direction: row-reverse;
     }
 
+    .artwork-container {
+        width: 40%;
+    }
+
     .about-release-block {
-        height: 100%;
+        width: 60%;
         margin-top: 0;
         display: flex;
         flex-direction: column;

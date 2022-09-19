@@ -84,11 +84,12 @@ li a {
 
 .latest-release-title {
     color: var(--white);
-    font-size: 2rem;
+    font-size: 2.4rem;
 }
 
 .out-now {
     color: var(--silver);
+    font-size: 1.4rem;
 }
 
 .buttons-container {
@@ -103,9 +104,10 @@ li a {
 }
 
 button {
-    width: 8rem;
-    padding: 6px 0;
-    font-family: 'Josefin Sans', sans-serif
+    width: 10rem;
+    padding: 0.8rem 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
 }
 
 .button-1 {
