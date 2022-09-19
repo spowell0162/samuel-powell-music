@@ -161,12 +161,12 @@ h4 {
 
     /* Main */
 
-    .video-container {
-        margin-bottom: 2rem;
-    }
-
     h4 {
         font-size: 2rem;
-        margin-bottom: 2.6rem;
+        margin-bottom: 2.4rem;
+    }
+
+    .last-heading {
+        margin-bottom: 1rem;
     }
 }

@@ -140,6 +140,12 @@ button {
     width: 6rem;
 }
 
+button:active {
+    border: var(--white) 2px solid;
+    background-color: var(--white);
+    color: var(--black);
+}
+
 .button-1 {
     background-color: var(--orange);
     border: var(--orange) 2px solid;
@@ -259,15 +265,19 @@ button {
     }
 
     button {
-        padding: 0.8rem;
-        width: 8rem;
-        font-size: 1.2rem;
+        padding: 1rem;
+        width: 10rem;
+        font-size: 1.4rem;
     }
 
     button:hover {
         border: var(--white) 2px solid;
         background-color: var(--white);
         color: var(--black);
+    }
+
+    .last-release-block {
+        margin-bottom: 0.8rem;
     }
 
 }
