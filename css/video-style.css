@@ -25,7 +25,7 @@ a {
     text-decoration: none;
 }
 
-.music-page-container {
+.video-page-container {
     background-color: var(--black);
     padding: 1rem 1rem 3rem 1rem;
 }
@@ -73,79 +73,31 @@ li a {
 
 /* Main */
 
-.release-block {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 1.6rem;
-}
-
-.artwork-container {
+.video-container {
+    position: relative;
     width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin-bottom: 1rem;
 }
 
-img {
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
 }
 
-.about-release-block {
-    margin-top: 0.5rem;
-    border-top: 2px solid var(--orange);
-}
-
-h2 {
-    margin-top: 1rem;
-    color: var(--white);
-}
-
-h3,
-p {
-    margin-top: 0.5rem;
-}
-
-h3 {
-    font-weight: 400;
+h4 {
     color: var(--silver);
+    text-align: center;
+    margin-bottom: 1.4rem;
 }
 
-p {
-    font-weight: 300;
-    color: var(--white);
-    line-height: 1.4rem;
-}
-
-.buttons-container {
-    margin-top: 0.6rem;
-}
-
-button {
-    font-family: 'Josefin Sans', sans-serif;
-    padding: 0.5rem;
-    width: 6rem;
-}
-
-.button-1 {
-    background-color: var(--orange);
-    border: var(--orange) 2px solid;
-}
-
-.button-2 {
-    background-color: rgba(255, 255, 255, 0);
-    border: var(--white) 2px solid;
-    color: var(--white);
-}
 
 /* Tablet */
 
-@media (min-width: 600px) {
-
-    .release-block {
-        width: 60%;
-    }
-}
 
 
 /* Desktop */
@@ -154,7 +106,7 @@ button {
 
     /* General */
 
-    .music-page-container {
+    .video-page-container {
         padding: 1rem 2rem 1rem 2rem;
     }
 
@@ -204,54 +156,12 @@ button {
 
     /* Main */
 
-    .release-block {
-        width: 100%;
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 1rem;
-
+    .video-container {
+        margin-bottom: 2rem;
     }
 
-    .release-block-reverse {
-        flex-direction: row-reverse;
+    h4 {
+        font-size: 2rem;
+        margin-bottom: 2.6rem;
     }
-
-    .about-release-block {
-        height: 100%;
-        margin-top: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    h2 {
-        font-size: 2.4rem;
-    }
-
-    h3 {
-        font-size: 1.6rem;
-        font-weight: 400;
-    }
-
-    p {
-        font-size: 1.4rem;
-        line-height: 2rem;
-    }
-
-    .buttons-container {
-        margin-top: 1rem;
-    }
-
-    button {
-        padding: 0.8rem;
-        width: 8rem;
-        font-size: 1.2rem;
-    }
-
-    button:hover {
-        border: var(--white) 2px solid;
-        background-color: var(--white);
-        color: var(--black);
-    }
-
 }
